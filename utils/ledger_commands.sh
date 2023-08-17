@@ -44,7 +44,7 @@ fund_account(){
             --token $2 \
             --source faucet \
             --target $1 \
-            --signer $1
+            --signing-keys $1
     fi
 }
 
@@ -59,7 +59,7 @@ transfer_nam(){
         --token $token \
         --source $from \
         --target $to \
-        --signer $from
+        --signing-keys $from
 }
 
 basic_init(){
